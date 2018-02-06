@@ -49,7 +49,7 @@
 	function subpoint_sql(){
 		if(isset($_SESSION['subpoint'])){
 			$kf = $_SESSION['subpoint'];
-			$subpoint_sql= " AND m.id = $kf";
+			$subpoint_sql= " AND l.id = $kf";
 		return $subpoint_sql;
 		}
 	}
